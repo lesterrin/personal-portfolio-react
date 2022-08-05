@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    position: relative;
+    background: #1d1d1d;
+    color: #fff;
+    font-family: 'roboto', sans-serif;
+}

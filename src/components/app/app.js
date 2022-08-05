@@ -1,13 +1,19 @@
 import React from 'react';
+import './app.css';
 import Navbar from '../navbar';
+import Home from '../home';
+import About from '../about';
+import Projects from "../projects";
+
 
 const App = () => {
   return (
-      <Navbar />
-    /*<div>
+      <React.Fragment>
         <Navbar />
-        <h1>test</h1>
-    </div>*/
+        <Home />
+        <About />
+        <Projects />
+      </React.Fragment>
   );
 }
 
