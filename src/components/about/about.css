@@ -67,14 +67,18 @@
     border: 1px solid #464646;
     text-align: center;
     position: relative;
-    cursor: pointer;
+    cursor: default;
     transition: .5s;
 }
 
 .skill{
     font-size: 2rem;
-    color: #464646;
+    color: #fff;
     line-height: 200px;
+}
+
+.skill-card .skill{
+    opacity: 0.5;
 }
 
 .skill-card:hover{
@@ -82,7 +86,7 @@
 }
 
 .skill-card:hover .skill{
-    color: #fff;
+    opacity: 1;
 }
 
 .skill-card.large{

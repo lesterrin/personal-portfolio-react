@@ -5,7 +5,14 @@ import linkedinlogo from '../../assets/linkedin-logo.png';
 import tglogo from '../../assets/tg-logo.png';
 
 const Navbar = () => {
-
+    const links = document.querySelectorAll('.link');
+    console.log(links);
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            links.forEach(ele => ele.classList.remove('active'));
+            link.classList.add('active');
+        })
+    })
     return(
             <nav className="navbar">
                 <div className="social-container">
