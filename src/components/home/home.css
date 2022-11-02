@@ -64,3 +64,8 @@
     text-transform: capitalize;
     border: none;
 }
+
+.profile-photo{
+    height: 550px;
+    border-radius: 200px;
+}

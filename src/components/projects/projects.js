@@ -16,13 +16,13 @@ const projects = [ //вынести в отдельный файл
     {
         name: "to-do list",
         type: "#учебный",
-        link: "https://vs-todo-list.herokuapp.com/"
+        link: "https://react-todo-list-nine-smoky.vercel.app/"
     },
     ,
     {
         name: "star-db",
         type: "#учебный",
-        link: "https://vs-star-db.herokuapp.com/"
+        link: "https://react-star-db.vercel.app/"
     }
 ]
 

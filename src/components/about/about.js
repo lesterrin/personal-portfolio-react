@@ -1,13 +1,35 @@
 import React from 'react';
 import './about.css';
 import SkillsListItem from "../skills-list-item";
+import CertsListItem from "../certs-list-item";
 
 const skills = ['JavaScript', 'ReactJS', 'HTML', 'CSS', 'Bootstrap', 'MODX Revolution', 'PHP', 'MySQL']; //вынести в отдельный файл
+const certs = [
+    {
+        name: "React + Redux - Профессиональная Разработка",
+        link: "https://www.udemy.com/certificate/UC-7435b64a-9463-4b90-ae67-bd9180ee41ca/"
+    },
+    {
+        name: "Полный Курс Веб-Разработчика",
+        link: "https://www.udemy.com/certificate/UC-2465cd83-239f-43bd-95e7-975e2dc449e9/"
+    },
+    {
+        name: "EF SET Certificate - English level",
+        link: "https://efset.org/cert/GSz8nx"
+    },
+    {
+        name: "Основы тестирования программного обеспечения",
+        link: "https://universarium.org/cert/0722-000403-01-18"
+}];
 
 const About = () => {
 
     const skillsLIst = skills.map((item) => {
         return  <SkillsListItem skill = {item} />
+    });
+
+    const certsList = certs.map((item) => {
+        return  <CertsListItem {...item} />
     });
 
     return(
@@ -32,6 +54,9 @@ const About = () => {
             </div>
             <h2 className="heading">Сертификаты</h2>
             <div className="seperator"></div>
+            <div className="cert-container">
+                {certsList}
+            </div>
             <h2 className="heading">Навыки</h2>
             <div className="seperator"></div>
             <div className="skill-container">
