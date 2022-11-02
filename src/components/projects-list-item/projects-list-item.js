@@ -4,7 +4,7 @@ import './projects-list-item.css'
 const ProjectsListItem = (props) => {
     const {name, type, link} = props;
     return(
-        <div className="project-card">
+        <div key={name} className="project-card" >
             <a href={link}>
                 <div className="content">
                     <h1 className="project-name">{name}</h1>

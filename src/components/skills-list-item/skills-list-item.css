@@ -1,0 +1,31 @@
+.skill-card{
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #464646;
+    text-align: center;
+    position: relative;
+    cursor: default;
+}
+
+.skill{
+    font-size: 2rem;
+    color: #fff;
+    line-height: 200px;
+    transition: .5s;
+}
+
+.skill-card .skill{
+    opacity: 0.5;
+}
+
+.skill-card:hover{
+    background: var(--bg);
+}
+
+.skill-card:hover .skill{
+    opacity: 1;
+}
+
+.skill-card.large{
+    grid-column: 2 span;
+}

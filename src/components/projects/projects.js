@@ -2,7 +2,7 @@ import React from 'react';
 import './projects.css';
 import ProjectsListItem from '../projects-list-item';
 
-const projects = [
+const projects = [ //вынести в отдельный файл
     {
         name: "Комсомольский-на-Амуре городской архив",
         type: "#рабочий",
@@ -29,7 +29,7 @@ const projects = [
 const Projects = () => {
 
     const items = projects.map((item) => {
-        return <ProjectsListItem {...item} />
+        return  <ProjectsListItem {...item} />
     });
 
     return(

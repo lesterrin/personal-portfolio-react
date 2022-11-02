@@ -1,7 +1,15 @@
 import React from 'react';
 import './about.css';
+import SkillsListItem from "../skills-list-item";
+
+const skills = ['JavaScript', 'ReactJS', 'HTML', 'CSS', 'Bootstrap', 'MODX Revolution', 'PHP', 'MySQL']; //вынести в отдельный файл
 
 const About = () => {
+
+    const skillsLIst = skills.map((item) => {
+        return  <SkillsListItem skill = {item} />
+    });
+
     return(
         <section className="about" id="about-section">
             <h2 className="heading">Обо <span className="highlight">мне</span></h2>
@@ -9,7 +17,7 @@ const About = () => {
             <div className="about-me-container">
                 <div className="left-col">
                     <div><span className="highlight">Имя:</span> Владимир Шорин</div>
-                    <div><span className="highlight">Возраст:</span> 25 лет</div>
+                    <div><span className="highlight">Возраст:</span> 26 лет</div>
                     <div><span className="highlight">Желаемая должность:</span> Junior Frontend/React developer</div>
                 </div>
                 <div className="right-col">
@@ -27,30 +35,7 @@ const About = () => {
             <h2 className="heading">Навыки</h2>
             <div className="seperator"></div>
             <div className="skill-container">
-                <div className="skill-card" >
-                    <p className="skill">HTML</p>
-                </div>
-                <div className="skill-card">
-                    <p className="skill">CSS</p>
-                </div>
-                <div className="skill-card">
-                    <p className="skill">MODX Revolution</p>
-                </div>
-                <div className="skill-card">
-                    <p className="skill">MySQL</p>
-                </div>
-                <div className="skill-card">
-                    <p className="skill">JavaScript</p>
-                </div>
-                <div className="skill-card">
-                    <p className="skill">PHP</p>
-                </div>
-                <div className="skill-card">
-                    <p className="skill">ReactJS</p>
-                </div>
-                <div className="skill-card">
-                    <p className="skill">Bootstrap</p>
-                </div>
+                {skillsLIst}
             </div>
         </section>
     );
