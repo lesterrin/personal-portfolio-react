@@ -4,7 +4,7 @@ import Navbar from '../navbar';
 import Home from '../home';
 import About from '../about';
 import Projects from "../projects";
-
+import Footer from '../footer';
 
 const App = () => {
   return (
@@ -13,6 +13,7 @@ const App = () => {
         <Home />
         <About />
         <Projects />
+        <Footer />
       </React.Fragment>
   );
 }

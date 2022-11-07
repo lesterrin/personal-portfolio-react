@@ -41,6 +41,7 @@ const About = () => {
                     <div><span className="highlight">Имя:</span> Владимир Шорин</div>
                     <div><span className="highlight">Возраст:</span> 26 лет</div>
                     <div><span className="highlight">Желаемая должность:</span> Junior Frontend/React developer</div>
+                    <div><span className="highlight">Образование:</span> Высшее, Информационная безопасность автоматизированных систем</div>
                 </div>
                 <div className="right-col">
                     <p className="about-para">Привет. На данный момент я занимаю должность fullstack веб-разработчика
