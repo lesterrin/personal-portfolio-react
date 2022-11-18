@@ -7,29 +7,33 @@ const skills = ['JavaScript', 'ReactJS', 'HTML', 'CSS', 'Bootstrap', 'MODX Revol
 const certs = [
     {
         name: "React + Redux - Профессиональная Разработка",
-        link: "https://www.udemy.com/certificate/UC-7435b64a-9463-4b90-ae67-bd9180ee41ca/"
+        link: "https://www.udemy.com/certificate/UC-7435b64a-9463-4b90-ae67-bd9180ee41ca/",
+        year: 2022,
+        company: 'Udemy'
     },
     {
         name: "Полный Курс Веб-Разработчика",
-        link: "https://www.udemy.com/certificate/UC-2465cd83-239f-43bd-95e7-975e2dc449e9/"
+        link: "https://www.udemy.com/certificate/UC-2465cd83-239f-43bd-95e7-975e2dc449e9/",
+        year: 2021,
+        company: 'Udemy'
     },
     {
         name: "EF SET Certificate - English level",
-        link: "https://efset.org/cert/GSz8nx"
+        link: "https://efset.org/cert/GSz8nx",
+        year: 2022,
+        company: 'EF SET'
     },
     {
         name: "Основы тестирования программного обеспечения",
-        link: "https://universarium.org/cert/0722-000403-01-18"
+        link: "https://universarium.org/cert/0722-000403-01-18",
+        year: 2019,
+        company: 'Универсариум'
 }];
 
 const About = () => {
 
     const skillsLIst = skills.map((item) => {
         return  <SkillsListItem skill = {item} />
-    });
-
-    const certsList = certs.map((item) => {
-        return  <CertsListItem {...item} />
     });
 
     return(
@@ -50,13 +54,13 @@ const About = () => {
                         Изучаю React.JS. Нахожусь в активном поиске работы младшим фронтенд-разработчиком.
                         Готов к переезду.</p>
                     <a href="https://komsomolsk-na-amure.hh.ru/resume/7c253d83ff082017400039ed1f754b6d536969"
-                       className="btn">Резюме</a>
+                       className="btn" target="_blank">Резюме</a>
                 </div>
             </div>
             <h2 className="heading">Сертификаты</h2>
             <div className="seperator"></div>
             <div className="cert-container">
-                {certsList}
+                {certs.map(cert => <CertsListItem cert = {cert}/>)}
             </div>
             <h2 className="heading">Навыки</h2>
             <div className="seperator"></div>
