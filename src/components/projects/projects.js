@@ -1,30 +1,7 @@
 import React from 'react';
 import './projects.css';
-import ProjectsListItem from '../projects-list-item';
-
-const projects = [ //вынести в отдельный файл
-    {
-        name: "Комсомольский-на-Амуре городской архив",
-        type: "#рабочий",
-        link: "https://archive.kmscity.ru/"
-    },
-    {
-        name: "Портал «Наш Комсомольск»",
-        type: "#рабочий",
-        link: "https://gorod.kmscity.ru/"
-    },
-    {
-        name: "to-do list",
-        type: "#учебный",
-        link: "https://react-todo-list-nine-smoky.vercel.app/"
-    },
-    ,
-    {
-        name: "star-db",
-        type: "#учебный",
-        link: "https://react-star-db.vercel.app/"
-    }
-]
+import ProjectsListItem from './projects-list-item';
+import {projects} from '../pseudo-db';
 
 const Projects = () => {
 

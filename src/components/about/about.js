@@ -2,33 +2,7 @@ import React from 'react';
 import './about.css';
 import SkillsListItem from "../skills-list-item";
 import CertsListItem from "../certs-list-item";
-
-const skills = ['JavaScript', 'ReactJS', 'HTML', 'CSS', 'Bootstrap', 'MODX Revolution', 'PHP', 'MySQL']; //вынести в отдельный файл
-const certs = [
-    {
-        name: "React + Redux - Профессиональная Разработка",
-        link: "https://www.udemy.com/certificate/UC-7435b64a-9463-4b90-ae67-bd9180ee41ca/",
-        year: 2022,
-        company: 'Udemy'
-    },
-    {
-        name: "Полный Курс Веб-Разработчика",
-        link: "https://www.udemy.com/certificate/UC-2465cd83-239f-43bd-95e7-975e2dc449e9/",
-        year: 2021,
-        company: 'Udemy'
-    },
-    {
-        name: "EF SET Certificate - English level",
-        link: "https://efset.org/cert/GSz8nx",
-        year: 2022,
-        company: 'EF SET'
-    },
-    {
-        name: "Основы тестирования программного обеспечения",
-        link: "https://universarium.org/cert/0722-000403-01-18",
-        year: 2019,
-        company: 'Универсариум'
-}];
+import {certs, skills} from '../pseudo-db';
 
 const About = () => {
 

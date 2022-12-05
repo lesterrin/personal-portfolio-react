@@ -1,17 +1,16 @@
 import React from "react";
-import './certs-list-item.css'
+import s from './certs-list-item.module.css'
 
 const CertsListItem = ({cert}) => {
     const {name,year,company,link} = cert;
 
     return(
-        <div className="cert-card" >
+        <div className={s.cert_card} >
             <a href={link} target="_blank">
-                <div className="content">
-                    <h1 className="cert-name">{name}</h1>
-                    <span className="tags">{year}</span>
-                    <br/>
-                    <span className="tags">{company}</span>
+                <div className={s.content}>
+                    <h1 className={s.cert_name}>{name}</h1>
+                    <div className={s.tags}>{year}</div>
+                    <div className={s.tags}>{company}</div>
                 </div>
             </a>
         </div>
