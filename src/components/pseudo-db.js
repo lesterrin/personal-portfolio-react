@@ -1,4 +1,4 @@
-export const skills = ['JavaScript', 'ReactJS', 'HTML', 'CSS', 'Bootstrap', 'MODX Revolution', 'PHP', 'MySQL']; //вынести в отдельный файл
+export const skills = ['JavaScript', 'ReactJS', 'Redux', 'HTML', 'CSS', 'JQuery', 'Bootstrap', 'MODX Revolution', 'PHP', 'MySQL'];
 export const certs = [
     {
         name: "React + Redux - Профессиональная Разработка",
@@ -25,25 +25,45 @@ export const certs = [
         company: 'Универсариум'
     }];
 
-export const projects = [ //вынести в отдельный файл
+export const projects = [
     {
         name: "Комсомольский-на-Амуре городской архив",
         type: "#рабочий",
-        link: "https://archive.kmscity.ru/"
+        link: "https://archive.kmscity.ru/",
+        reposLink: null,
+        stack: 'JS, JQuery, HTML, CSS, Bootstrap, ModX',
+        description: 'Информационный ресурс, позволяющий сотрудникам городского архива размещать информацию о работе учреждения'
     },
     {
         name: "Портал «Наш Комсомольск»",
         type: "#рабочий",
-        link: "https://gorod.kmscity.ru/"
+        link: "https://gorod.kmscity.ru/",
+        reposLink: null,
+        stack: 'JS, JQuery, HTML, CSS, Bootstrap, HTML, MySQL ModX',
+        description: 'Сервис подачи/обработки обращений по вопросам городского хозяйства'
     },
     {
         name: "to-do list",
         type: "#учебный",
-        link: "https://react-todo-list-nine-smoky.vercel.app/"
+        link: "https://react-todo-list-nine-smoky.vercel.app/",
+        reposLink: 'https://github.com/lesterrin/React_Todo_List',
+        stack: 'JS, ReactJS, HTML, CSS, Bootstrap',
+        description: ''
     },
     {
         name: "star-db",
         type: "#учебный",
-        link: "https://react-star-db.vercel.app/"
+        link: "https://react-star-db.vercel.app/",
+        reposLink: 'https://github.com/lesterrin/star-db',
+        stack: 'JS, ReactJS, HTML, CSS, Bootstrap',
+        description: ''
+    },
+    {
+        name: "re-store",
+        type: "#учебный",
+        link: 'https://re-store-pi.vercel.app/',
+        reposLink: 'https://github.com/lesterrin/re-store',
+        stack: 'JS, ReactJS, Redux, HTML, CSS, Bootstrap',
+        description: ''
     }
 ]

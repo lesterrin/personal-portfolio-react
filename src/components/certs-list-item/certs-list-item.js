@@ -9,8 +9,8 @@ const CertsListItem = ({cert}) => {
             <a href={link} target="_blank">
                 <div className={s.content}>
                     <h3 className={s.cert_name}>{name}</h3>
-                    <div className={s.tags}>{year}</div>
-                    <div className={s.tags}>{company}</div>
+                    <div className={s.tags}>Год получения: {year}</div>
+                    <div className={s.tags}>Организация: {company}</div>
                 </div>
             </a>
         </div>

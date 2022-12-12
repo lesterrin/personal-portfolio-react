@@ -3,7 +3,7 @@
     padding: 50px 10vw;
 }
 
-.project-container{
+.project_container{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);

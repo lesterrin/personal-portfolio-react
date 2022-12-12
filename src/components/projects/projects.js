@@ -1,5 +1,5 @@
 import React from 'react';
-import './projects.css';
+import s from './projects.module.css';
 import ProjectsListItem from './projects-list-item';
 import {projects} from '../pseudo-db';
 
@@ -10,10 +10,10 @@ const Projects = () => {
     });
 
     return(
-        <section className="project" id="project-section">
+        <section className={s.project} id="project-section">
             <h2 className="heading">Проект<span className="highlight">ы</span></h2>
             <div className="seperator"></div>
-            <div className="project-container">
+            <div className={s.project_container}>
                 {items}
             </div>
         </section>

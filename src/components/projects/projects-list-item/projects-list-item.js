@@ -1,16 +1,19 @@
 import React from "react";
-import './projects-list-item.css'
+import s from './projects-list-item.module.css';
+import ghlogo from '../../../assets/github-grise.png';
 
 const ProjectsListItem = (props) => {
-    const {name, type, link} = props;
+    const {name, type, link, reposLink, stack, description} = props;
     return(
-        <div className="project-card" >
-            <a href={link} target="_blank">
-                <div className="content">
-                    <h1 className="project-name">{name}</h1>
-                    <span className="tags">{type}</span>
+        <div className={s.project_card} >
+                <div className={s.content}>
+                    <h1 className={s.project_name}>{name}</h1>
+                    <div className={s.tags}>{type}</div>
+                    <div>{description}</div>
+                    <div>{stack}</div>
+                    <div><a href={link} className={s.tags}><img src={ghlogo}/></a></div>
+                    {reposLink ? <div><a href={reposLink} className={s.tags}>Ссылка на репозиторий</a></div> : null}
                 </div>
-            </a>
         </div>
     );
 }

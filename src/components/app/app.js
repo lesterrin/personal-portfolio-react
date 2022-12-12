@@ -7,15 +7,15 @@ import Projects from "../projects";
 import Footer from '../footer';
 
 const App = () => {
-  return (
-      <React.Fragment>
-        <Navbar />
-        <Home />
-        <About />
-        <Projects />
-        <Footer />
-      </React.Fragment>
-  );
+    return (
+        <React.Fragment>
+            <Navbar/>
+                <Home/>
+                <About/>
+                <Projects/>
+            <Footer/>
+        </React.Fragment>
+    );
 }
 
 export default App;

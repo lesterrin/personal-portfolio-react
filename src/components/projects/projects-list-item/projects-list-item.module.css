@@ -1,0 +1,28 @@
+.project_card {
+    cursor: default;
+    border-radius: 10px;
+    border: 1px solid #464646;
+    color: #808080;
+    padding: 30px 10px;
+}
+
+.project_card img{
+    height: 25px;
+}
+
+.project_card a {
+    text-decoration: none;
+    transition: .5s;
+    opacity: 0.5;
+    color: white;
+}
+
+.project_card a:hover{
+    opacity: 1;
+}
+
+.content {
+    text-align: center;
+}
+
+
