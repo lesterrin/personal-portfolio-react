@@ -1,18 +1,18 @@
 import React from 'react';
 import './about.css';
-import SkillsListItem from "../skills-list-item";
-import CertsListItem from "../certs-list-item";
+import SkillsListItem from "./skills-list-item";
+import CertsListItem from "./certs-list-item";
 import {certs, skills} from '../pseudo-db';
 
 const About = () => {
 
     const skillsLIst = skills.map((item) => {
-        return  <SkillsListItem skill = {item} />
+        return  <SkillsListItem {...item} />
     });
 
     return(
         <section className="about" id="about-section">
-            <h2 className="heading">Обо <span className="highlight">мне</span></h2>
+            <h2 className="heading">Обо мне</h2>
             <div className="seperator"></div>
             <div className="about-me-container">
                 <div className="left-col">

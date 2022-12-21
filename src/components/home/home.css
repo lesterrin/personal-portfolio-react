@@ -4,13 +4,20 @@
     height: auto;
     margin-top: 60px;
     padding: 0 10vw;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+            "hero-content profile-photo";
 }
-.hero-content{
+.hero-content {
     width: 50%;
+    grid-area: hero-content;
 }
 .hero-heading{
     font-size: 5rem;
@@ -65,7 +72,9 @@
     border: none;
 }
 
-.profile-photo{
+.profile-photo { grid-area: profile-photo; }
+
+.profile-photo img{
     height: 550px;
     border-radius: 200px;
 }

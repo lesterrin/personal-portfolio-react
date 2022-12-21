@@ -2,27 +2,67 @@
     cursor: default;
     border-radius: 10px;
     border: 1px solid #464646;
-    color: #808080;
-    padding: 30px 10px;
+    transition: .5s;
+    padding: 20px 20px;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px 10px;
+    grid-template-areas:
+            "title links"
+            "content content"
+            "stack stack";
 }
 
-.project_card img{
-    height: 25px;
+.project_card:hover {
+    border-color: #eee;
 }
 
-.project_card a {
+.title {
+    grid-area: title;
+}
+
+.project_name{
+    font-weight: bold;
+    font-size: large;
+    color: #ff3559;
+}
+
+.project_type{
+    color: #575757;
+}
+
+.content {
+    grid-area: content;
+}
+
+.links {
+    grid-area: links;
+    text-align: right;
+    margin: 3px;
+}
+
+.links a {
     text-decoration: none;
     transition: .5s;
     opacity: 0.5;
     color: white;
 }
 
-.project_card a:hover{
+
+.links a:hover {
     opacity: 1;
 }
 
-.content {
-    text-align: center;
+.links a img{
+    height: 25px;
+    border-radius: 50%;
 }
+
+.stack {
+    grid-area: stack;
+}
+
 
 
