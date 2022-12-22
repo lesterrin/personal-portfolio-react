@@ -72,6 +72,35 @@
     color: #ff3559;
 }
 
+.seperator{
+    width: 25%;
+    margin: 20px auto;
+    position: relative;
+
+}
+
+.seperator::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.seperator::after{
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+}
+
 @media (max-width: 1200px) {
     .about {
         padding: 50px 20px;
@@ -85,8 +114,7 @@
 @media (max-width: 992px) {
     .cert_container, .skill_container {
         grid-template-columns: repeat(2, 1fr);
-    }
-}
+    }  }
 
 @media (max-width: 768px) {
     .cert_container, .skill_container, .about_me_container {

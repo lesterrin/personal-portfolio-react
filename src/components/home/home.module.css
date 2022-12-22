@@ -89,6 +89,7 @@
         height: auto;
         margin-top: 120px;
         min-height: calc(100vh - 130px);
+        padding: 50px 20px;
     }
 
 }
