@@ -1,27 +1,31 @@
-.skill-card{
-    height: 200px;
+.skill_card{
+    line-height: 40px;
     border-radius: 10px;
+    padding: 20px;
     border: 1px solid #464646;
     position: relative;
     cursor: default;
-    align-items: center;
-    display:flex;
-    justify-content: center;
+    text-align: center;
+    transition: .5s;
+}
+
+.skill_card:hover{
+    border-color: #eee;
+}
+
+.icon i {
+    font-size: 75px;
+    color: #ff3559;
 }
 
 .skill{
     font-size: 2rem;
     color: #fff;
-    /*line-height: 200px;*/
     transition: .5s;
 }
 
 .skill-card .skill{
     opacity: 0.5;
-}
-
-.skill-card:hover{
-    background: var(--bg);
 }
 
 .skill-card:hover .skill{

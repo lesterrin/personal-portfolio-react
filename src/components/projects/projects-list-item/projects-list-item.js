@@ -11,8 +11,8 @@ const ProjectsListItem = (props) => {
         <div className={s.project_name}>{name}</div>
         <div className={s.project_type}>{type}</div>
       </div>
-      <div className={s.links}><a href={link}><img src={linklogo} /></a>
-        {reposLink ? <a href={reposLink} className={s.tags}><img src={ghlogo} /></a> : null}
+      <div className={s.links}><a href={link} target='_blank'><img src={linklogo} /></a>
+        {reposLink ? <a href={reposLink} className={s.tags} target='_blank'><img src={ghlogo} /></a> : null}
       </div>
       <div className={s.content}>
         <div>{description}</div>

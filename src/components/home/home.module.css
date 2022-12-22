@@ -1,44 +1,41 @@
-.home{
+.home {
     width: 100%;
     min-height: calc(100vh - 60px);
     height: auto;
     margin-top: 60px;
     padding: 0 10vw;
     align-items: center;
-    justify-content: space-between;
-    position: relative;
     display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px 10px;
-    grid-template-areas:
-            "hero-content profile-photo";
 }
-.hero-content {
+
+.hero_content {
     width: 50%;
-    grid-area: hero-content;
 }
-.hero-heading{
+
+.hero_heading {
     font-size: 5rem;
     text-transform: capitalize;
     font-weight: 500;
 }
-.highlight{
+
+.highlight {
     color: #ff3559;
 }
-.profession{
+
+.profession {
     width: fit-content;
     display: block;
     margin: 10px 0 20px;
-    margin-left: auto;
     text-transform: capitalize;
     position: relative;
     padding: 10px 20px;
     color: #1d1d1d;
     z-index: 2;
 }
-.profession::before{
+
+.profession::before {
     content: '';
     position: absolute;
     top: 0;
@@ -49,7 +46,8 @@
     z-index: -1;
     transform: skewX(10deg);
 }
-.profession::after{
+
+.profession::after {
     content: '';
     position: absolute;
     top: 0;
@@ -58,11 +56,13 @@
     height: 2px;
     background: #e3e3e3;
 }
-.info{
+
+.info {
     line-height: 30px;
     margin-bottom: 50px;
 }
-.btn{
+
+.btn {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 50px;
@@ -72,9 +72,27 @@
     border: none;
 }
 
-.profile-photo { grid-area: profile-photo; }
+.profile_photo {
+    text-align: right;
+}
 
-.profile-photo img{
+.profile_photo img {
     height: 550px;
     border-radius: 200px;
+}
+
+@media (max-width: 1200px) {
+    .profile_photo img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .profile_photo {
+        text-align: center;
+    }
 }

@@ -3,7 +3,7 @@
     border-radius: 10px;
     border: 1px solid #464646;
     transition: .5s;
-    padding: 20px 20px;
+    padding: 20px;
     display: grid;
     grid-auto-columns: 1fr;
     grid-template-columns: 3fr 1fr;
@@ -47,7 +47,6 @@
     text-decoration: none;
     transition: .5s;
     opacity: 0.5;
-    color: white;
 }
 
 

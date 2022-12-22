@@ -10,10 +10,10 @@ const Projects = () => {
     });
 
     return(
-        <section className={s.project} id="project-section">
-            <h2 className="heading">Проекты</h2>
-            <div className="seperator"></div>
-            <div className={s.project_container}>
+        <section className={s.projects} id="project-section">
+            <h2 className={s.heading}>Проекты</h2>
+            <div className={s.seperator}></div>
+            <div className={s.projects_container}>
                 {items}
             </div>
         </section>

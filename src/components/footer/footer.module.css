@@ -16,12 +16,12 @@
     text-align:right;
 }
 
-.source-link{
+.source_link{
     grid-area: source-link;
     text-align:right;
 }
 
-.source-link a {
+.source_link a {
     color: #ff3559;
     margin:0;
     padding: 0;

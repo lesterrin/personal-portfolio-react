@@ -1,12 +1,13 @@
-import React from "react";
-import './skills-list-item.css';
+import React from 'react';
+import s from './skills-list-item.module.css';
 
 const SkillsListItem = (props) => {
-    return(
-        <div className="skill-card">
-            <p className="skill">{props.title}</p>
-        </div>
-    )
+  return (
+    <div className={s.skill_card}>
+      <div className={s.icon}><i className={props.img}></i></div>
+      <div className={s.skill}>{props.title}</div>
+    </div>
+  )
 }
 
 export default SkillsListItem;

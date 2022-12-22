@@ -1,15 +1,15 @@
 import React from 'react';
-import './home.css';
+import s from './home.module.css';
 import profile from '../../assets/my-photo.jpg';
 
 const Home = () => {
   return (
-    <section className="home">
-      <div className="hero-content">
-        <h1 className="hero-heading"><span className="highlight">Владимир</span> Шорин</h1>
-        <p className="profession">Младший веб-разработчик</p>
+    <section className={s.home}>
+      <div className={s.hero_content}>
+        <h1 className={s.hero_heading}><span className={s.highlight}>Владимир</span> Шорин</h1>
+        <p className={s.profession}>Младший веб-разработчик</p>
       </div>
-      <div className="profile-photo"><img src={profile} /></div>
+      <div className={s.profile_photo}><img src={profile} /></div>
     </section>
   );
 }
