@@ -1,22 +1,22 @@
-.about{
+.about {
     width: 100%;
     height: auto;
     padding: 50px 10vw;
 }
 
-.heading{
+.heading {
     text-align: center;
     font-weight: 500;
     font-size: 3.5rem;
 }
 
-.seperator{
+.seperator {
     width: 25%;
     margin: 20px auto;
     position: relative;
 }
 
-.about_me_container{
+.about_me_container {
     margin: 150px 0 100px;
     width: 100%;
     display: grid;
@@ -30,12 +30,12 @@
     grid-gap: 20px;
 }
 
-.about_image{
+.about_image {
     border-radius: 10px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
 }
 
-.about_text{
+.about_text {
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 35px;
@@ -51,7 +51,8 @@
     text-transform: capitalize;
     border: none;
 }
-.skill_container{
+
+.skill_container {
     position: relative;
     margin-top: 100px;
     display: grid;
@@ -59,7 +60,7 @@
     grid-gap: 20px;
 }
 
-.cert_container{
+.cert_container {
     position: relative;
     margin: 100px 0 100px;
     display: grid;
@@ -76,21 +77,18 @@
         padding: 50px 20px;
     }
 
-    .cert_container, .skill_container{
+    .cert_container, .skill_container {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
 
 @media (max-width: 768px) {
     .about_me_container {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    @media (max-width: 768px) {
-        .cert_container, .skill_container {
-            grid-template-columns: repeat(2, 1fr);
-        }
+    .cert_container, .skill_container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
