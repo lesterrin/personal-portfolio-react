@@ -66,6 +66,14 @@ export const projects = [
     description: 'Выводит список изображений, загружаемых с помощью UnsplashAPI. Позволяет поставить лайк изображению',
   },
   {
+    name: 'Социальная сеть',
+    type: '#учебный (в разработке)',
+    link: 'https://social-network-bice-sigma.vercel.app/',
+    reposLink: 'https://github.com/lesterrin/social-network',
+    stack: 'JS, ReactJS, Redux, HTML, CSS',
+    description: 'Список дел. Позволяет добавлять, выполнять и помечать важными дела',
+  },
+  {
     name: 'to-do list',
     type: '#учебный',
     link: 'https://react-todo-list-nine-smoky.vercel.app/',
