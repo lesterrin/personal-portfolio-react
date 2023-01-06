@@ -71,7 +71,7 @@ export const projects = [
     link: 'https://social-network-bice-sigma.vercel.app/',
     reposLink: 'https://github.com/lesterrin/social-network',
     stack: 'JS, ReactJS, Redux, HTML, CSS',
-    description: 'Список дел. Позволяет добавлять, выполнять и помечать важными дела',
+    description: 'В перспективе позволит регистрироваться, получать доступ к списку пользователей социальной сети, писать посты, заполнять профиль, вести переписку',
   },
   {
     name: 'to-do list',
