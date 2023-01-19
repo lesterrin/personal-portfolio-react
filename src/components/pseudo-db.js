@@ -66,6 +66,14 @@ export const projects = [
     description: 'Выводит список изображений, загружаемых с помощью UnsplashAPI. Позволяет поставить лайк изображению',
   },
   {
+    name: 'cats-food',
+    type: '#тестовое задание',
+    link: 'https://cat-food-test-task.vercel.app/',
+    reposLink: 'https://github.com/lesterrin/cat-food-test-task',
+    stack: 'JS, ReactJS, HTML, CSS',
+    description: 'Выводит список товаров. Позволяет "купить" товар, что изменит состояние карточки',
+  },
+  {
     name: 'Социальная сеть',
     type: '#учебный (в разработке)',
     link: 'https://social-network-bice-sigma.vercel.app/',
