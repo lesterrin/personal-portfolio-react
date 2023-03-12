@@ -47,7 +47,7 @@ export const projects = [
     link: 'https://archive.kmscity.ru/',
     reposLink: null,
     stack: 'JS, JQuery, HTML, CSS, Bootstrap, ModX',
-    description: 'Информационный ресурс, позволяющий сотрудникам городского архива размещать информацию о работе учреждения',
+    description: 'Информационный ресурс, позволяющий сотрудникам городского архива размещать информацию о работе учреждения.',
   },
   {
     name: 'Портал «Наш Комсомольск»',
@@ -71,7 +71,7 @@ export const projects = [
     link: 'https://swapi-test-task.vercel.app/',
     reposLink: 'https://github.com/lesterrin/swapi-test-task',
     stack: 'ReactJS, JS, Redux, Redux Toolkit, HTML, CSS',
-    description: 'Отображает информаию о персонажах, полученную с помощью API. Организована пагинация. Позволяет менять язык интерфейса',
+    description: 'Отображает информацию о персонажах, полученную с помощью API. Организована пагинация. Позволяет менять язык интерфейса.',
   },
   {
     name: 'image list',
