@@ -1,17 +1,13 @@
 export const skills = [
-    {title: 'JavaScript', img: 'devicon-javascript-plain'}, {
-        title: 'ReactJS',
-        img: 'devicon-react-original',
-    }, {title: 'Redux', img: 'devicon-redux-original'},
-    {title: 'HTML', img: 'devicon-html5-plain'}, {
-        title: 'CSS',
-        img: 'devicon-css3-plain',
-    }, {title: 'JQuery', img: 'devicon-jquery-plain'},
-    {title: 'Bootstrap', img: 'devicon-bootstrap-plain'}, {
-        title: 'MODX Revolution',
-        img: 'devicon-modx-plain',
-    }, {title: 'PHP', img: 'devicon-php-plain'},
-    {title: 'MySQL', img: 'devicon-mysql-plain'}];
+    {title: 'JavaScript', img: 'devicon-javascript-plain'},
+    {title: 'ReactJS',img: 'devicon-react-original'},
+    {title: 'Redux', img: 'devicon-redux-original'},
+    {title: 'TypeScript', img: 'devicon-typescript-original'},
+    {title: 'HTML', img: 'devicon-html5-plain'},
+    {title: 'CSS', img: 'devicon-css3-plain'},
+    {title: 'JQuery', img: 'devicon-jquery-plain'},
+    {title: 'Bootstrap', img: 'devicon-bootstrap-plain'},
+    {title: 'MODX Revolution', img: 'devicon-modx-plain'}]
 
 
 export const certs = [

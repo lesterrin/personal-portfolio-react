@@ -10,6 +10,8 @@ const About = () => {
         return  <SkillsListItem {...item} />
     });
 
+    const exp = Math.floor((new Date() - new Date('7/31/2020'))/1000/60/60/24/365);
+
     return(
         <section className={s.about} id="about-section">
             <h2 className={s.heading}>Обо мне</h2>
@@ -18,15 +20,13 @@ const About = () => {
                 <div className={s.left_col}>
                     <div><span className={s.highlight}>Имя:</span> Владимир Шорин</div>
                     <div><span className={s.highlight}>Возраст:</span> 26 лет</div>
-                    <div><span className={s.highlight}>Желаемая должность:</span> Junior Frontend/React developer</div>
+                    <div><span className={s.highlight}>Желаемая должность:</span> Frontend (React) developer</div>
                     <div><span className={s.highlight}>Образование:</span> Высшее, Информационная безопасность автоматизированных систем</div>
                 </div>
                 <div className={s.right_col}>
-                    <p className={s.about_text}>Привет. На данный момент я занимаю должность fullstack веб-разработчика
-                        в администрации города Комсомольска-на-Амуре.
-                        Занимаюсь разработкой и сопровождением сайтов в ведомстве муниципалитета.
-                        Изучаю React.JS. Нахожусь в активном поиске работы младшим фронтенд-разработчиком.
-                        Готов к переезду.</p>
+                    <p className={s.about_text}>Привет. Я фронтенд-разработчик с {exp}+ годами опыта работы. В поиске вакансии на полный или частичный рабочий день или стажировки  в удаленном формате.
+                        <br/>Город проживания: Комсомольск-на-Амуре (МСК +7).
+                        <br/>Готов рассмотреть переезд в г. Хабаровск.</p>
                     <a href="https://komsomolsk-na-amure.hh.ru/resume/7c253d83ff082017400039ed1f754b6d536969"
                        className={s.btn} target="_blank">Резюме</a>
                 </div>

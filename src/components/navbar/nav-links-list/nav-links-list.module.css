@@ -1,6 +1,7 @@
 .links_container {
     display: flex;
     list-style: none;
+    justify-content: flex-end;
 }
 
 .link {
