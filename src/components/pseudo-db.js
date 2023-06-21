@@ -7,7 +7,7 @@ export const skills = [
     {title: 'CSS', img: 'devicon-css3-plain'},
     {title: 'JQuery', img: 'devicon-jquery-plain'},
     {title: 'Bootstrap', img: 'devicon-bootstrap-plain'},
-    {title: 'MODX Revolution', img: 'devicon-modx-plain'}]
+    {title: 'MODX', img: 'devicon-modx-plain'}]
 
 
 export const certs = [
@@ -38,14 +38,6 @@ export const certs = [
 
 export const projects = [
     {
-        name: 'Комсомольский-на-Амуре городской архив',
-        type: '#рабочий',
-        link: 'https://archive.kmscity.ru/',
-        reposLink: null,
-        stack: 'JS, JQuery, HTML, CSS, Bootstrap, ModX',
-        description: 'Информационный ресурс, позволяющий сотрудникам городского архива размещать информацию о работе учреждения.',
-    },
-    {
         name: 'Портал «Наш Комсомольск»',
         type: '#рабочий',
         link: 'https://gorod.kmscity.ru/',
@@ -60,6 +52,14 @@ export const projects = [
         reposLink: null,
         stack: 'JS, JQuery, HTML, CSS, Bootstrap, HTML, MySQL ModX',
         description: 'Предоставляет чиновникам возможность размещения информации о деятельности муниципалитета.',
+    },
+    {
+        name: 'Комсомольский-на-Амуре городской архив',
+        type: '#рабочий',
+        link: 'https://archive.kmscity.ru/',
+        reposLink: null,
+        stack: 'JS, JQuery, HTML, CSS, Bootstrap, ModX',
+        description: 'Информационный ресурс, позволяющий сотрудникам городского архива размещать информацию о работе учреждения.',
     },
     {
         name: 'swapi-test-task',

@@ -58,6 +58,13 @@
     margin-bottom: 50px;
 }
 
+.about_text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 35px;
+    margin-bottom: 40px;
+}
+
 .btn {
     padding: 10px 20px;
     text-decoration: none;

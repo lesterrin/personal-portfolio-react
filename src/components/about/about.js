@@ -14,7 +14,7 @@ const About = () => {
 
     return(
         <section className={s.about} id="about-section">
-            <h2 className={s.heading}>Обо мне</h2>
+            {/*<h2 className={s.heading}>Обо мне</h2>
             <div className={s.seperator}></div>
             <div className={s.about_me_container}>
                 <div className={s.left_col}>
@@ -24,13 +24,14 @@ const About = () => {
                     <div><span className={s.highlight}>Образование:</span> Высшее, Информационная безопасность автоматизированных систем</div>
                 </div>
                 <div className={s.right_col}>
-                    <p className={s.about_text}>Привет. Я фронтенд-разработчик с {exp}+ годами опыта работы. В поиске вакансии на полный или частичный рабочий день или стажировки  в удаленном формате.
+                    <p className={s.about_text}>Привет. Я фронтенд-разработчик с {exp}+ годами опыта работы.
+                        В поиске вакансии на полный или частичный рабочий день или стажировки  в удаленном формате.
                         <br/>Город проживания: Комсомольск-на-Амуре (МСК +7).
                         <br/>Готов рассмотреть переезд в г. Хабаровск.</p>
                     <a href="https://komsomolsk-na-amure.hh.ru/resume/7c253d83ff082017400039ed1f754b6d536969"
                        className={s.btn} target="_blank">Резюме</a>
                 </div>
-            </div>
+            </div>*/}
             <h2 className={s.heading}>Сертификаты</h2>
             <div className={s.seperator}></div>
             <div className={s.cert_container}>
